@@ -1,7 +1,7 @@
 FROM alpine:3.3
 
 # CLI
-ARG VERSION=1.3.1
+ARG VERSION=1.4.0
 
 RUN apk --update add nodejs=4.2.4-r1 && npm install -g postcss-cli@$VERSION autoprefixer
                                                                     
