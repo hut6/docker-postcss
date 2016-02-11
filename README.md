@@ -1,10 +1,10 @@
 # docker-postcss
 
-postcss+autoprefixer with Docker
+postcss+autoprefixer with Docker. It will also
 
 ## Usage
 
-    docker run -it --rm -v $PWD:$PWD -w $PWD hut6/docker-postcss -u autoprefixer test.css
+    docker run -it --rm -v $PWD:$PWD -w $PWD hut6/docker-postcss -m -u autoprefixer test.css -o test.css
 
 ## Versions
  - 5.0.0
