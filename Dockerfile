@@ -1,8 +1,8 @@
 FROM alpine:3.3
 
 # CLI
-ENV VERSION 5.0.14
+ENV VERSION 6.0.11
 
-RUN apk --update add nodejs=4.2.4-r1 && npm install -g postcss@$VERSION postcss-cli cssnano autoprefixer && rm -rf /var/cache/apk/*
+RUN apk --update add nodejs=4.3.2-r1 && npm install -g postcss@6.0.11 postcss-cli cssnano autoprefixer && rm -rf /var/cache/apk/*
 
 ENTRYPOINT [ "postcss" ]

@@ -22,6 +22,7 @@ postcss+autoprefixer with Docker. It will also
  - 5.0.12
  - 5.0.13
  - 5.0.14
+ - 6.0.11
 
 ## Testing
 
