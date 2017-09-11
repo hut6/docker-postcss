@@ -24,9 +24,16 @@ postcss+autoprefixer with Docker. It will also
  - 5.0.14
  - 6.0.11
 
+## Building
+Dockerfiles will be automatically built by Dockerhub when they are pushed to the git repository, and new builds will be visible at https://hub.docker.com/r/hut6/docker-postcss/
+
+For the trivial case of bumping npm version numbers, you can do this on the command line.
+
+    for V in 5.0.15 5.0.16; do sh rebuild.sh $V; done
+    
 ## Testing
 
-Testing a new version.
+Building and testing a new version locally might be worth doing but probably not necessary in most cases. 
 
     docker build -t hut6/docker-postcss .
     docker run hut6/docker-postcss --version
